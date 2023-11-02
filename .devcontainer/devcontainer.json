@@ -1,0 +1,11 @@
+{
+    "name": "Java with AWS SDK for S3",
+    "image": "mcr.microsoft.com/vscode/devcontainers/java:openjdk11",
+    "extensions": ["vscjava.vscode-java-pack"],
+    "settings": {
+        "java.home": "/usr/lib/jvm/java-11-openjdk-amd64"
+    },
+    "postCreateCommand": "curl -o aws-java-sdk-s3-1.12.118.jar https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.12.118/aws-java-sdk-s3-1.12.118.jar && code --install-extension ms-vscode.azure-account",
+    "forwardPorts": [80, 8000, 8080],
+    "remoteUser": "codespace"
+}
